@@ -1,15 +1,24 @@
-- title "Galleries"
-- for gallery in @galleries
-  .gallery
-    h4
-      = link_to gallery.name, gallery
-    span Paintings: #{gallery.paintings.size}
+- seo_keywords 'Обувь Стиль, обувной магазин, стильная обувь,
+качественная обувь, регион 69, город Тверь'
 
-  #paintings
-  -  gallery.paintings.each do |painting|
-    .painting
-      = link_to painting_path(painting) do
-        = image_tag painting.image_url(:thumb) if painting.image?
-      / = image_tag painting.image_url(:full)
-      .name
-        = painting.name
+h5 Мы работаем с мировыми брендами:
+.fotorama@fotorama  data-width="100%" data-height='300' data-autoplay="true"
+  = image_tag('http://follow.thegoldenboot.co.uk/wp-content/uploads/2012/05/Hispanitas-logo-2.jpg')
+  = image_tag('http://cdn1.bigcommerce.com/server1000/4d17b/product_images/uploaded_images/piko-header.jpg')
+  = image_tag('http://www.thewalkingcompany.com/new/image/brand470/beautifeel_20140411.jpg')
+  = image_tag('http://www.mirposudy.ru/media/upload/editor/image/sanita-shoes-outlet.jpg')
+  = image_tag('https://m1.behance.net/rendition/modules/41106003/disp/9a477ec179a96ef3204c6b6ef1700293.jpg')
+/ - for gallery in @galleries
+/   .gallery
+/     h4
+/       = link_to gallery.name, gallery
+/     span Paintings: #{gallery.paintings.size}
+
+/   #paintings
+/   -  gallery.paintings.each do |painting|
+/     .painting
+/       = link_to painting_path(painting) do
+/         = image_tag painting.image_url(:thumb) if painting.image?
+/       / = image_tag painting.image_url(:full)
+/       .name
+/         = painting.name

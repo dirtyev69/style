@@ -29,6 +29,7 @@ gem 'jquery-ui-rails'
 
 gem 'rmagick', :require => 'RMagick'
 gem 'rails-assets-bootstrap', '~> 3.1.1'
+gem 'rails-assets-fotorama'
 gem 'role-rails'
 gem 'russian'
 
