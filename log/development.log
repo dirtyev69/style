@@ -13120,3 +13120,37 @@ Served asset /jquery.js - 200 OK (13ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-03 17:22:28 +0300
 Served asset /jquery_ujs.js - 200 OK (5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 18:09:54 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (67.3ms)
+  Rendered shared/_header.html.slim (3.9ms)
+  Rendered shared/_map.html.slim (4.1ms)
+Completed 200 OK in 117.0ms (Views: 108.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 18:09:54 +0300
+Served asset /jquery/jquery.js - 200 OK (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 18:09:54 +0300
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 18:09:54 +0300
+Served asset /jquery_ujs.js - 200 OK (16ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 18:09:54 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 18:09:54 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)

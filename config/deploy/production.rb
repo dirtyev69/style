@@ -5,7 +5,7 @@ set :bundle_without,  [:development, :test]
 
 set :deploy_to_application_name , 'prod'
 
-set :repository, "git@github.com:jekaantipin/#{git_application_name}.git"
+set :repository, "git@github.com:dirtyev69/style.git"
 set :branch, 'master'
 set :deploy_to, "/var/www/#{deploy_to_application_name}"
 
