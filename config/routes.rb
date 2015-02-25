@@ -1,5 +1,5 @@
 Prod::Application.routes.draw do
-  root :to => "galleries#index"
+  root :to => "pages#index"
   resources :galleries
   resources :paintings
 
