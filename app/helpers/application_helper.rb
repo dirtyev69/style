@@ -12,6 +12,6 @@ module ApplicationHelper
   end
 
   def default_seo_title
-    "Обувь Стиль — обувной магазин в городе Твери"
+    "Shoes style"
   end
 end
