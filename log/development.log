@@ -13154,3 +13154,1627 @@ Served asset /jquery.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 18:09:54 +0300
 Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:37:37 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.5ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (62.8ms)
+  Rendered shared/_header.html.slim (5.2ms)
+  Rendered shared/_map.html.slim (4.3ms)
+Completed 200 OK in 135.9ms (Views: 125.1ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:37:37 +0300
+Served asset /jquery.js - 200 OK (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:37:37 +0300
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:37:37 +0300
+Served asset /jquery/jquery.js - 200 OK (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:44:26 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.3ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (4.7ms)
+  Rendered shared/_header.html.slim (0.5ms)
+  Rendered shared/_map.html.slim (3.1ms)
+Completed 200 OK in 14.3ms (Views: 13.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:44:26 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:44:26 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:44:26 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:45:49 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.4ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (5.2ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (3.5ms)
+Completed 200 OK in 17.3ms (Views: 15.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:45:49 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:45:49 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:45:49 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:46:45 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.2ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (6.0ms)
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_01_variables.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_alerts.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_background-variant.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_border-radius.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_buttons.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_center-block.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_clearfix.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_forms.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_gradients.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_grid-framework.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_grid.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_hide-text.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_image.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_labels.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_list-group.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_nav-divider.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_nav-vertical-align.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_opacity.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_pagination.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_panels.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_progress-bar.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_reset-filter.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_resize.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_responsive-visibility.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_size.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_tab-focus.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_table-row.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_text-emphasis.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_text-overflow.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_vendor-prefixes.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_alerts.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_badges.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_button-groups.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_buttons.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_carousel.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_close.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_code.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_component-animations.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_dropdowns.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_forms.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_glyphicons.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_grid.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_input-groups.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_jumbotron.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_labels.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_list-group.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_media.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_mixins.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_modals.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_navbar.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_navs.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_normalize.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_pager.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_pagination.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_panels.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_popovers.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_print.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_progress-bars.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_responsive-embed.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_scaffolding.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_tables.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_theme.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_thumbnails.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_tooltip.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_type.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_utilities.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_wells.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/bootstrap.scssc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/98eac09b9a773f11bd289ffebc3cdc31390b5105/font-awesome.css.erbc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/a9b2be4f6b5ef4f4d9708c9abe555ef01ddaa26d/_header.sassc: can't dump anonymous class #<Class:0x007fef7d96f860>
+
+Compiled application.css  (6289ms)  (pid 74410)
+  Rendered shared/_header.html.slim (0.5ms)
+  Rendered shared/_map.html.slim (3.9ms)
+Completed 200 OK in 6341.2ms (Views: 6339.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:46:51 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:46:51 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:46:51 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:47:04 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.4ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (5.5ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 12.4ms (Views: 10.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:47:04 +0300
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:47:04 +0300
+Served asset /jquery/jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:47:04 +0300
+Served asset /jquery_ujs.js - 200 OK (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:47:23 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.7ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (65.4ms)
+  Rendered shared/_header.html.slim (4.5ms)
+  Rendered shared/_map.html.slim (4.4ms)
+Completed 200 OK in 123.9ms (Views: 114.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:47:23 +0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:47:23 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:47:23 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:48:04 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.2ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (6.4ms)
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_01_variables.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_alerts.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_background-variant.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_border-radius.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_buttons.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_center-block.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_clearfix.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_forms.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_gradients.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_grid-framework.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_grid.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_hide-text.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_image.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_labels.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_list-group.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_nav-divider.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_nav-vertical-align.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_opacity.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_pagination.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_panels.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_progress-bar.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_reset-filter.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_resize.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_responsive-visibility.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_size.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_tab-focus.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_table-row.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_text-emphasis.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_text-overflow.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_vendor-prefixes.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_alerts.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_badges.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_button-groups.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_buttons.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_carousel.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_close.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_code.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_component-animations.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_dropdowns.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_forms.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_glyphicons.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_grid.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_input-groups.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_jumbotron.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_labels.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_list-group.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_media.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_mixins.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_modals.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_navbar.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_navs.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_normalize.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_pager.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_pagination.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_panels.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_popovers.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_print.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_progress-bars.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_responsive-embed.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_scaffolding.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_tables.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_theme.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_thumbnails.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_tooltip.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_type.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_utilities.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_wells.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/bootstrap.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/98eac09b9a773f11bd289ffebc3cdc31390b5105/font-awesome.css.erbc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/a9b2be4f6b5ef4f4d9708c9abe555ef01ddaa26d/_header.sassc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Compiled application.css  (6275ms)  (pid 74591)
+  Rendered shared/_header.html.slim (0.4ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 6310.5ms (Views: 6308.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:48:10 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:48:10 +0300
+Served asset /jquery/jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:48:10 +0300
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:51:00 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.4ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.3ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (7.7ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 16.6ms (Views: 14.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:51:00 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:51:00 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:51:00 +0300
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:51:25 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.1ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (7.0ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 14.2ms (Views: 12.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:51:25 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:51:25 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:51:25 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:51:41 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.2ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (5.5ms)
+  Rendered shared/_header.html.slim (0.5ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 11.6ms (Views: 10.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:51:41 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:51:41 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:51:41 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:52:08 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.1ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (4.7ms)
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_01_variables.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_alerts.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_background-variant.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_border-radius.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_buttons.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_center-block.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_clearfix.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_forms.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_gradients.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_grid-framework.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_grid.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_hide-text.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_image.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_labels.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_list-group.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_nav-divider.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_nav-vertical-align.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_opacity.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_pagination.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_panels.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_progress-bar.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_reset-filter.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_resize.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_responsive-visibility.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_size.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_tab-focus.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_table-row.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_text-emphasis.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_text-overflow.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_vendor-prefixes.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_alerts.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_badges.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_button-groups.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_buttons.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_carousel.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_close.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_code.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_component-animations.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_dropdowns.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_forms.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_glyphicons.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_grid.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_input-groups.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_jumbotron.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_labels.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_list-group.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_media.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_mixins.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_modals.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_navbar.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_navs.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_normalize.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_pager.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_pagination.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_panels.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_popovers.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_print.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_progress-bars.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_responsive-embed.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_scaffolding.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_tables.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_theme.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_thumbnails.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_tooltip.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_type.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_utilities.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_wells.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/bootstrap.scssc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/98eac09b9a773f11bd289ffebc3cdc31390b5105/font-awesome.css.erbc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/a9b2be4f6b5ef4f4d9708c9abe555ef01ddaa26d/_header.sassc: can't dump anonymous class #<Class:0x007fbc1169d578>
+
+Compiled application.css  (6400ms)  (pid 74591)
+  Rendered shared/_header.html.slim (0.4ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 6541.2ms (Views: 6540.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:52:15 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:52:15 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:52:15 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:52:48 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.5ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (66.7ms)
+  Rendered shared/_header.html.slim (4.2ms)
+  Rendered shared/_map.html.slim (4.2ms)
+Completed 200 OK in 124.7ms (Views: 115.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:52:49 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:52:49 +0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:52:49 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:53:09 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.1ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (5.2ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (2.3ms)
+Completed 200 OK in 14.4ms (Views: 13.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:53:09 +0300
+Served asset /jquery/jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:53:09 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:53:09 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:53:22 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (4.1ms)
+  Rendered shared/_header.html.slim (0.2ms)
+  Rendered shared/_map.html.slim (4.6ms)
+Completed 200 OK in 14.0ms (Views: 12.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:53:22 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:53:22 +0300
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:53:22 +0300
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:53:47 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.2ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.2ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (5.1ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 12.5ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:53:47 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:53:47 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:53:47 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:54:13 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (3.4ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 8.5ms (Views: 7.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:54:13 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:54:13 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:54:13 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:54:14 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.1ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (3.9ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 10.6ms (Views: 9.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:54:14 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:54:14 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:54:14 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:57:18 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.2ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (5.1ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 14.7ms (Views: 13.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:57:18 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:57:18 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:57:18 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 20:59:12 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.1ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (4.3ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 11.9ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:59:12 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 20:59:12 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 20:59:12 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 21:00:25 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (4.3ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 9.5ms (Views: 8.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:00:25 +0300
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_01_variables.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_alerts.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_background-variant.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_border-radius.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_buttons.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_center-block.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_clearfix.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_forms.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_gradients.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_grid-framework.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_grid.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_hide-text.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_image.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_labels.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_list-group.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_nav-divider.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_nav-vertical-align.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_opacity.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_pagination.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_panels.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_progress-bar.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_reset-filter.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_resize.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_responsive-visibility.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_size.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_tab-focus.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_table-row.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_text-emphasis.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_text-overflow.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/aaf39682f5b799832d8ad08dd01476256f8fa04b/_vendor-prefixes.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_alerts.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_badges.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_breadcrumbs.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_button-groups.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_buttons.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_carousel.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_close.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_code.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_component-animations.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_dropdowns.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_forms.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_glyphicons.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_grid.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_input-groups.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_jumbotron.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_labels.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_list-group.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_media.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_mixins.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_modals.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_navbar.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_navs.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_normalize.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_pager.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_pagination.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_panels.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_popovers.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_print.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_progress-bars.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_responsive-embed.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_responsive-utilities.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_scaffolding.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_tables.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_theme.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_thumbnails.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_tooltip.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_type.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_utilities.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/_wells.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/38c800749d236bc7f61805761d34c01f518d81fe/bootstrap.scssc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Compiled font-awesome.css  (217ms)  (pid 74726)
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/98eac09b9a773f11bd289ffebc3cdc31390b5105/font-awesome.css.erbc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/058372e4ac8fd81200de726ac94c88af9bb40921/application.sassc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Warning. Error encountered while saving cache /Users/evgenijantipin/Projects/style/tmp/cache/sass/a9b2be4f6b5ef4f4d9708c9abe555ef01ddaa26d/_header.sassc: can't dump anonymous class #<Class:0x007fa5f578ae90>
+
+Compiled application.css  (6840ms)  (pid 74726)
+Served asset /application.css - 200 OK (6864ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:00:32 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:00:32 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:00:32 +0300
+Compiled jquery/jquery.js  (3ms)  (pid 74726)
+Compiled jquery.js  (24ms)  (pid 74726)
+Compiled jquery_ujs.js  (0ms)  (pid 74726)
+Compiled application.js  (57ms)  (pid 74726)
+Served asset /application.js - 200 OK (70ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:00:32 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 21:02:09 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.2ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (5.5ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 13.8ms (Views: 12.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:02:09 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:02:09 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:02:09 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:02:09 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:02:09 +0300
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 21:02:56 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (3.5ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (4.1ms)
+Completed 200 OK in 12.6ms (Views: 11.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:02:57 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:02:57 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:02:57 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:02:57 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:02:57 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 21:03:33 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.1ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (4.9ms)
+  Rendered shared/_header.html.slim (0.4ms)
+  Rendered shared/_map.html.slim (3.1ms)
+Completed 200 OK in 15.1ms (Views: 14.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:03:33 +0300
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:03:33 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:03:33 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:03:33 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:03:33 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 21:05:17 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.2ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (4.6ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 12.3ms (Views: 10.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:05:17 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:05:17 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:05:17 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:05:17 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:05:17 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 21:05:21 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.1ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (5.4ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 10.6ms (Views: 9.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:05:21 +0300
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:05:21 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:05:21 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:05:21 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:05:21 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 21:06:55 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (4.9ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 10.2ms (Views: 9.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:06:55 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:06:55 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:06:55 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:06:55 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:06:55 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/galleries" for 127.0.0.1 at 2015-02-25 21:07:01 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.1ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (4.8ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 63.8ms (Views: 62.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:07:01 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:01 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:01 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:01 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:01 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 21:07:02 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (4.9ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 10.8ms (Views: 9.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:07:02 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:02 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:02 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:02 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:02 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/galleries" for 127.0.0.1 at 2015-02-25 21:07:03 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.1ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (4.4ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 9.2ms (Views: 8.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:07:03 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:03 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:03 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:03 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:03 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 21:07:06 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (4.3ms)
+  Rendered shared/_header.html.slim (0.3ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 9.5ms (Views: 8.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:07:06 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:06 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:06 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:06 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:06 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 21:07:40 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.1ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (3.3ms)
+  Rendered shared/_header.html.slim (2.9ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 11.9ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:07:40 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:40 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:40 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:40 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:07:40 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 21:08:01 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (4.2ms)
+  Rendered shared/_header.html.slim (2.7ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 12.4ms (Views: 11.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:08:01 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:01 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:01 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:01 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:01 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 21:08:15 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.1ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (5.0ms)
+  Rendered shared/_header.html.slim (2.4ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 12.9ms (Views: 11.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:08:15 +0300
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:15 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:15 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:15 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:15 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-25 21:08:22 +0300
+Processing by GalleriesController#index as HTML
+  [1m[36mGallery Load (0.1ms)[0m  [1mSELECT "galleries".* FROM "galleries" [0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  [1m[36mPainting Load (0.1ms)[0m  [1mSELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  Rendered galleries/index.html.slim within layouts/application (4.5ms)
+  Rendered shared/_header.html.slim (2.7ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 12.4ms (Views: 11.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:08:22 +0300
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:22 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:22 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:22 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:22 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/galleries" for 127.0.0.1 at 2015-02-25 21:08:32 +0300
+Processing by GalleriesController#index as HTML
+  [1m[35mGallery Load (0.1ms)[0m  SELECT "galleries".* FROM "galleries" 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 4[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 5
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "paintings" WHERE "paintings"."gallery_id" = 6[0m
+  [1m[35mPainting Load (0.1ms)[0m  SELECT "paintings".* FROM "paintings" WHERE "paintings"."gallery_id" = 6
+  Rendered galleries/index.html.slim within layouts/application (4.7ms)
+  Rendered shared/_header.html.slim (0.2ms)
+  Rendered shared/_map.html.slim (0.0ms)
+Completed 200 OK in 9.7ms (Views: 8.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-25 21:08:32 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:32 +0300
+Served asset /jquery/jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:32 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:32 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-25 21:08:32 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
