@@ -3,6 +3,7 @@ Prod::Application.routes.draw do
   resources :galleries
   resources :paintings
 
+  match 'contacts' => 'pages#contacts', :via => :get
 
   namespace 'admin' do
     get '/' => 'dashboard#index'
