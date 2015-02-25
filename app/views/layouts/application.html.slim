@@ -1,7 +1,16 @@
 doctype html
 html
   head
-    title Prod
+    title
+      = content_for?(:seo_title)? yield(:seo_title) : default_seo_title
+    - if content_for?(:seo_description)
+      meta{ name='description' content="#{yield(:seo_description)}" }
+    - if content_for?(:seo_keywords)
+      meta{ name='description' content="#{yield(:seo_keywords)}" }
+
+    meta{name="apple-mobile-web-app-capable" content="yes"}
+    meta{content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=1" name="viewport"}
+
     = stylesheet_link_tag 'application'
     = javascript_include_tag "application"
     = javascript_include_tag 'http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU', :type => 'text/javascript'
