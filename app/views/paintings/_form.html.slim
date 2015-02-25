@@ -1,0 +1,15 @@
+h1 Редактирование
+= simple_form_for @painting, :html => { :multipart => true } do |f|
+  = f.error_messages
+  = f.hidden_field :gallery_id
+  p
+    = f.label :name
+    = f.input :name, :label => false
+  p
+    = f.input :image
+  p
+    = f.label :remote_image_url, "or image URL"
+    br
+    = f.input :remote_image_url
+  p.well
+    = f.submit

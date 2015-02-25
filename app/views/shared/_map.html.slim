@@ -1,0 +1,47 @@
+.map
+  #YMapsID{style="width: 100%; height: 620px;"}
+
+  / - unless params[:controller] == 'pages' && params[:action] == 'contacts'
+  /   .map__contacts
+  /     dl
+  /       dt = t :map_contact
+  /       dd
+  /         p.map__contacts__phone
+  /           | +7&nbsp;(910)&nbsp;531&nbsp;60&nbsp;49
+  /         p.map__contacts__phone
+  /           | +7&nbsp;(920)&nbsp;158&nbsp;85&nbsp;82
+  /         p.map__contacts__mail
+  /           = mail_to 'hello@jetrockets.ru', 'hello@jetrockets.ru'
+
+  /     .requisites
+  /       p
+  /         =t :map_ogrnip
+  /         br
+  /         =t :map_inn
+  /       p
+  /         =t :map_adress
+  javascript:
+    ymaps.ready(function () {
+      var lat = 56.849384, lng = 35.832243;
+
+      var map = new ymaps.Map("YMapsID", {
+        center: [lat, lng],
+        zoom: 16,
+        type: "yandex#map",
+        }
+      );
+
+      var myPlacemark = new ymaps.Placemark(
+        [lat, lng], {
+            iconContent: "Организация",
+            balloonContent: "<h4 class='logo'></h4>+7 (910) 531 60 49<br/>+7 (920) 158 85 82<br/><br/>Адрес</p>"
+        }, {
+            hideIconOnBalloonOpen: false
+        }
+      );
+      map.geoObjects.add(myPlacemark);
+
+      map.controls.add("zoomControl", {top: 75, left: 5});
+      map.controls.add("mapTools");
+      map.controls.add("typeSelector", {top: 35, left: 5});
+    });

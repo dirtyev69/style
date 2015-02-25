@@ -1,0 +1,66 @@
+.navbar.navbar-inverse.navbar-fixed-top
+  .container
+    .navbar-header
+      ul.nav.navbar-nav
+        li { class="#{'active' if params[:controller] == 'admin/dashboard'}"  }
+          = link_to admin_path(), :class => 'navbar-brand' do
+            = fa_icon "tachometer"
+        li{ class="#{'active' if params[:controller] =~ /admin\/galleries/ }" }
+            = link_to 'Галлереи', admin_galleries_path
+
+        li{ class="#{'active' if params[:controller] =~ /admin\/paintings/ }" }
+            = link_to 'Превью', admin_paintings_path
+
+
+    / ul.nav.navbar-nav
+    /   li{ class="#{'active' if params[:controller] =~ /admin\/content/ }" }
+    /     a.dropdown-toggle data-toggle="dropdown" href="#"
+    /       | Контент
+    /       b.caret
+    /     ul.dropdown-menu
+    /       li{ class="#{'active' if params[:controller] == 'admin/content/rows'}" }
+    /         = link_to "Ряды", admin_content_rows_path(scope_params)
+
+    / ul.nav.navbar-nav
+    /   li{ class="#{'active' if params[:controller] =~ /admin\/galleries/ }" }
+    /     = link_to 'Галлереи', admin_galleries_path
+    /     ul.dropdown-menu
+    /       li{ class="#{'active' if current_scope == 'male' && params[:controller] == 'admin/shopping/catalogs' }" }
+    /         = link_to 'Каталоги', admin_shopping_catalogs_path(scope_params)
+    /       li{ class="#{'active' if params[:controller] == 'admin/shopping/vendors' }" }
+    /         = link_to 'Бренды', admin_shopping_vendors_path
+    /       li{ class="#{'active' if params[:controller] == 'admin/shopping/offers' }" }
+    /         = link_to 'Товары', admin_shopping_offers_path
+    /       li{ class="#{'active' if params[:controller] == 'admin/shopping/campaigns' }" }
+    /         = link_to 'Компании', admin_shopping_campaigns_path
+
+    /   li{ class="#{'active' if params[:controller] == 'admin/users'}"  }
+    /     = link_to 'Пользователи', admin_users_path
+
+    /   li{ class="#{'active' if params[:controller] == 'admin/accounts'}"  }
+    /     = link_to 'Аккаунты', admin_accounts_path
+    /   li{ class="#{'active' if params[:controller] == 'admin/pages'}"  }
+    /     = link_to 'Страницы', admin_pages_path
+    /   li{ class="#{'active' if params[:controller] == 'admin/posts'}"  }
+    /     = link_to 'Посты', admin_posts_path
+    /   li{ class="#{'active' if params[:controller] == 'admin/banners' }" }
+    /     = link_to 'Баннеры', admin_banners_path
+    /   li{ class="#{'active' if params[:controller] == 'admin/promos' }" }
+    /     = link_to 'Промо', admin_promos_path
+    /   li{ class="#{'active' if params[:controller] == 'admin/references' }" }
+    /     = link_to 'Ссылки', admin_references_path
+
+    / .pull-right
+    /   ul.nav.navbar-nav
+    /     li
+    /       a.dropdown-toggle data-toggle="dropdown" href="#"
+    /         = t("scopes.#{current_scope}")
+    /       ul.dropdown-menu
+    /         li{ class="#{'active' if current_scope == 'male'}" }
+    /           = link_to t('scopes.male'), { :scope => 'male' }
+    /         li{ class="#{'active' if current_scope == 'female'}" }
+    /           = link_to t('scopes.female'), {:scope => 'female'}
+
+        / - if current_user.present?
+        /   span.navbar-text
+        /     = current_user.display_name

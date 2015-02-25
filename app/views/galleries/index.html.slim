@@ -1,0 +1,15 @@
+- title "Galleries"
+- for gallery in @galleries
+  .gallery
+    h4
+      = link_to gallery.name, gallery
+    span Paintings: #{gallery.paintings.size}
+
+  #paintings
+  -  gallery.paintings.each do |painting|
+    .painting
+      = link_to painting_path(painting) do
+        = image_tag painting.image_url(:thumb) if painting.image?
+      / = image_tag painting.image_url(:full)
+      .name
+        = painting.name

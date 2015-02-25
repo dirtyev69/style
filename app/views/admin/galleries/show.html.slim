@@ -1,0 +1,25 @@
+- title @gallery.name
+#paintings
+  .panel.panel-default
+    .panel-heading Управление галереей
+    .panel-body
+      .btn-group.btn-group-sm
+        = link_to "Добавить", new_admin_painting_path(:gallery_id => @gallery), class: 'button btn btn-default'
+        = link_to "Удалить",  admin_gallery_path(@gallery), :confirm => 'Are you sure?', :method => :delete, class: 'button btn btn-default'
+        = link_to "Вернутся к галереям", admin_galleries_path, class: 'button btn btn-default'
+
+  - @gallery.paintings.each do |painting|
+    .painting
+      = image_tag painting.image_url(:thumb) if painting.image?
+      .name
+        = painting.name
+      .button-group
+        = link_to fa_icon('edit'), edit_admin_painting_path(painting)
+        = link_to fa_icon('times'), admin_painting_path(painting), :confirm => 'Are you sure?', :method => :delete
+
+/ p
+/   = link_to "Add a Painting", new_admin_painting_path(:gallery_id => @gallery)
+/   span |
+/   = link_to "Remove Gallery",  admin_gallery_path(@gallery), :confirm => 'Are you sure?', :method => :delete
+/   span |
+/   = link_to "View Galleries", galleries_path

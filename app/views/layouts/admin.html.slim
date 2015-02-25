@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title
+      | Luxepages
+    = csrf_meta_tags
+    = stylesheet_link_tag 'admin/application'
+    = javascript_include_tag 'admin/application'
+    
+  body
+    = render :partial => 'admin/shared/header'
+    .container
+      .row
+        .col-md-9
+          - if show_breadcrumbs?
+            = render_breadcrumbs :builder => ::BootstrapBreadcrumbsBuilder
+        .col-md-3
+          = content_for :actions
+      
+      = yield

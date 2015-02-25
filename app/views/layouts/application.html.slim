@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Prod
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag "application"
+    = javascript_include_tag 'http://api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU', :type => 'text/javascript'
+    = csrf_meta_tags
+  body
+    / = render :partial => 'shared/header'
+    .container
+      = render :partial => 'shared/header'
+      = yield
+       / = render :partial => 'shared/header'
+      = render :partial => 'shared/map'

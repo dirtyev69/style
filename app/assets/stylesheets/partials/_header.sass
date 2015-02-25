@@ -1,0 +1,36 @@
+.header
+  width: 100%
+  color: #fff
+  background: #D1D2D5
+  border-bottom: 1px solid #eee
+  +box-sizing(border-box)
+  +pie-clearfix
+
+.main_navigation
+  margin: 0 0 0 70px
+  li
+    position: relative
+    +inline-block
+    margin-right: 35px
+    line-height: 18px
+    font-size: 18px
+    font-family: Arial
+    a
+      height: 55px
+      line-height: 55px
+      color: #454546
+      // +link-underlined(#17B6F1, #D52F31)
+      &:hover
+        text-decoration: underline
+    &:after
+      position: absolute
+      top: 50%
+      right: -18px
+      margin: -7px 0 0 0
+      content: "\f111"
+      color: #fff
+      font-family: FontAwesome
+      font-size: 3px
+    &:last-child
+      &:after
+        content: " "

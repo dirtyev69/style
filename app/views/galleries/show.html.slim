@@ -1,0 +1,18 @@
+- title @gallery.name
+#paintings
+  - @gallery.paintings.each do |painting|
+    .painting
+      = image_tag painting.image_url(:thumb) if painting.image?
+      .name
+        = painting.name
+      .actions
+        = link_to "edit", edit_painting_path(painting)
+        span |
+        = link_to "remove", painting, :confirm => 'Are you sure?', :method => :delete
+  .clear
+p
+  = link_to "Add a Painting", new_painting_path(:gallery_id => @gallery)
+  span |
+  = link_to "Remove Gallery", @gallery, :confirm => 'Are you sure?', :method => :delete
+  span |
+  = link_to "View Galleries", galleries_path

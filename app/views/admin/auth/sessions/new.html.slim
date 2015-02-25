@@ -1,0 +1,17 @@
+- title "Login"
+.well
+  h4 вход в админку
+.row
+  .col-md-4.col-md-offset-4.well
+    = simple_form_for @user_session , :url => admin_auth_sign_in_path do |f|
+      - if f.error_messages.try(:present?)
+        .panel.panel-danger
+          .panel-body
+            = f.error_messages
+      .form-group
+        = f.label :username
+        = f.text_field :username, :class => 'form-control'
+      .form-group
+        = f.label :password
+        = f.password_field :password, :class => 'form-control'
+      = f.submit "Submit", :class => 'btn btn-primary'
