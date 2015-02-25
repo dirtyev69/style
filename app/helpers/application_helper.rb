@@ -12,6 +12,6 @@ module ApplicationHelper
   end
 
   def default_seo_title
-    "Shoes style"
+    t('default_seo_title')
   end
 end
