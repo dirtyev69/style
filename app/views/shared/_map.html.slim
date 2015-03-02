@@ -1,5 +1,5 @@
 .map
-  #YMapsID{style="width: 100%; height: 620px;"}
+  #YMapsID{style="width: 100%; height: 350px;"}
 
   / - unless params[:controller] == 'pages' && params[:action] == 'contacts'
   /   .map__contacts
@@ -34,7 +34,7 @@
       var myPlacemark = new ymaps.Placemark(
         [lat, lng], {
             iconContent: "<div class='nowrap'>Стиль</div>",
-            balloonContent: "<h4 class='logo'>Обувь Стиль</h4><br/>74 35 85<br/><br/><p>г. Тверь, ост. Л. Чайкиной</p><br/>"
+            balloonContent: "<h4 class='logo'>Обувь Стиль</h4><br/>74 35 85<br/><br/><p>г. Тверь, пр-т Ленина, 15/4</p><br/>"
         }, {
             hideIconOnBalloonOpen: false
         }

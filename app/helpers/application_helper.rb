@@ -14,4 +14,10 @@ module ApplicationHelper
   def default_seo_title
     t('default_seo_title')
   end
+
+
+  def tel_to(text)
+    groups = text.to_s.scan(/(?:^\+)?\d+/)
+    link_to text, "tel:#{groups.join '-'}"
+  end
 end
