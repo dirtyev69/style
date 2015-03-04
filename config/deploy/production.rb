@@ -17,7 +17,7 @@ server "5.101.99.155", :app, :web, :db, :primary => true
 
 # Используем rvm
 set :using_rvm, true
-set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"")
+set :rvm_ruby_string, 'ruby-1.9.3'
 set :rvm_type, :user
 
 # Авторизационные данные
