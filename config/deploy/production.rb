@@ -18,7 +18,7 @@ server "5.101.99.155", :app, :web, :db, :primary => true
 # Используем rvm
 set :using_rvm, true
 set :rvm_ruby_string, 'ruby-1.9.3'
-set :rvm_type, :user
+set :rvm_type, :system
 
 # Авторизационные данные
 set :user, "rails"
