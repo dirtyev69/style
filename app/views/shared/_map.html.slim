@@ -26,15 +26,15 @@
 
       var map = new ymaps.Map("YMapsID", {
         center: [lat, lng],
-        zoom: 16,
+        zoom: 17,
         type: "yandex#map",
         }
       );
 
       var myPlacemark = new ymaps.Placemark(
         [lat, lng], {
-            iconContent: "<div class='nowrap'>Стиль</div>",
-            balloonContent: "<h4 class='logo'>Обувь Стиль</h4><br/>74 35 85<br/><br/><p>г. Тверь, пр-т Ленина, 15/4</p><br/>"
+            iconContent: "<strong>Стиль</strong>",
+            balloonContent: "<h4 class='logo'>Обувь Стиль</h4><br/>74-35-85<br/><br/><p>г. Тверь, пр-т Ленина, 15/4</p><br/>"
         }, {
             hideIconOnBalloonOpen: false
         }
