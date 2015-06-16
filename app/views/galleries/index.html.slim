@@ -1,13 +1,14 @@
-- seo_keywords 'Обувь Стиль, обувной магазин, стильная обувь,
-качественная обувь, регион 69, город Тверь'
+- seo_description 'Галерея Обувь Стиль город Тверь, обувной магазин тверь, стильная обувь, качественная обувь, регион 69, город Тверь'
+
+- seo_keywords 'Галерея Обувь Стиль Тверь, обувной магазин Тверь, стильная обувь,
+качественная обувь Тверь'
+
 
 - for gallery in @galleries
   .gallery
     h4
-      = link_to gallery.name, gallery
-    span Paintings: #{gallery.paintings.size}
+      = gallery.name
 
-  #paintings
   -  gallery.paintings.each do |painting|
     .painting
       = link_to painting_path(painting) do

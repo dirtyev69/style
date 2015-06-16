@@ -10,6 +10,9 @@ gem 'better_errors'
 gem 'breadcrumbs_on_rails'
 gem 'scrypt'
 
+
+gem 'net-ssh', '2.7.0'
+
 gem 'compass-rails'
 gem "carrierwave"
 
