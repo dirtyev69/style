@@ -2,3 +2,10 @@ log/*
 tmp/*
 db/*.db
 db/*.sqlite3
+db/schema.rb
+
+.bundle/*
+
+public/uploads/
+
+

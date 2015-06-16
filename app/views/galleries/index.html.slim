@@ -7,11 +7,11 @@
   .gallery
     h4
       = gallery.name
-
-  -  gallery.paintings.each do |painting|
-    .painting
-      = link_to painting_path(painting) do
-        = image_tag painting.image_url(:thumb) if painting.image?
-      / = image_tag painting.image_url(:full)
-      .name
-        = painting.name
+    .gallery__list
+      -  gallery.paintings.each do |item|
+        .gallery__item
+          = link_to painting_path(item) do
+            = image_tag item.image_url(:thumb)
+          / = image_tag painting.image_url(:full)
+          / .name
+          /   = painting.name
