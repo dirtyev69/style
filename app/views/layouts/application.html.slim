@@ -6,7 +6,7 @@ html
     - if content_for?(:seo_description)
       meta{ name='description' content="#{yield(:seo_description)}" }
     - if content_for?(:seo_keywords)
-      meta{ name='description' content="#{yield(:seo_keywords)}" }
+      meta{ name='keywords' content="#{yield(:seo_keywords)}" }
 
     meta name='yandex-verification' content='59291208c75e805b'
     meta{name="apple-mobile-web-app-capable" content="yes"}
