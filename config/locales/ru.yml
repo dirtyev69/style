@@ -1,2 +1,9 @@
 ru:
-  default_seo_title: "Обувь стиль - магазин женской обуви в городe Тверь"
+  default_seo_title: "Магазин Стиль - женская обувь в городe Тверь"
+  views:
+    pagination:
+      truncate: '…'
+      next:     '›'
+      last:     'Последняя'
+      first:    'Первая'
+      previous: '‹'

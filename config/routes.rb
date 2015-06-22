@@ -10,7 +10,7 @@ Prod::Application.routes.draw do
 
     resources :galleries
     resources :paintings
-
+    resources :images, :only => [:create, :update, :destroy]
 
     namespace 'auth' do
       get 'sign_up' => 'users#new'

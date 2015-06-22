@@ -1,4 +1,7 @@
 class GalleriesController < ApplicationController
+
+  helper_method :paintings_collection
+
   def index
     @galleries = Gallery.all
   end
@@ -40,5 +43,10 @@ class GalleriesController < ApplicationController
     @gallery.destroy
     flash[:notice] = "Successfully destroyed gallery."
     redirect_to galleries_url
+  end
+protected
+
+  def paintings_collection(gallery)
+    @paintings_collection ||= gallery.paintings.page(params[:page])
   end
 end

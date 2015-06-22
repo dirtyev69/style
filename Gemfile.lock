@@ -106,7 +106,13 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (5.0.0)
       railties (>= 3.2.16)
+    js-routes (1.0.0)
+      railties (>= 3.2)
+      sprockets-rails
     json (1.8.1)
+    kaminari (0.16.3)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     kgio (2.9.2)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -139,9 +145,35 @@ GEM
       railties (= 3.2.19)
     rails-assets-bootstrap (3.1.1)
       rails-assets-jquery (>= 1.9.0)
+    rails-assets-doc-ready (1.0.4)
+      rails-assets-eventie (>= 1, < 2)
+    rails-assets-eventEmitter (4.2.11)
+    rails-assets-eventie (1.0.6)
+    rails-assets-fancybox (2.1.5)
     rails-assets-fotorama (4.6.2)
       rails-assets-jquery (>= 1.8)
+    rails-assets-get-size (1.2.2)
+      rails-assets-get-style-property (~> 1.0)
+    rails-assets-get-style-property (1.0.4)
+    rails-assets-imagesloaded (3.1.8)
+      rails-assets-eventEmitter (~> 4.0)
+      rails-assets-eventie (>= 1.0.4, < 2)
     rails-assets-jquery (2.1.1)
+    rails-assets-jquery-autosize (2.0.0)
+    rails-assets-masonry (3.2.2)
+      rails-assets-get-size (>= 1.1.4, < 1.3)
+      rails-assets-outlayer (~> 1.3.0)
+    rails-assets-matches-selector (1.0.2)
+    rails-assets-nprogress (0.1.6)
+    rails-assets-outlayer (1.3.0)
+      rails-assets-doc-ready (~> 1.0.0)
+      rails-assets-eventEmitter (>= 4.2, < 5)
+      rails-assets-eventie (~> 1.0.3)
+      rails-assets-get-size (>= 1.1.4, < 1.3)
+      rails-assets-get-style-property (~> 1.0)
+      rails-assets-matches-selector (~> 1.0)
+    rails-assets-underscore (1.8.3)
+    rails-assets-underscore.string (3.1.1)
     railties (3.2.19)
       actionpack (= 3.2.19)
       activesupport (= 3.2.19)
@@ -183,6 +215,8 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    sprockets-rails (0.0.1)
+      sprockets (>= 1.0.2)
     sqlite3 (1.3.9)
     temple (0.6.8)
     thor (0.19.1)
@@ -222,11 +256,20 @@ DEPENDENCIES
   font-awesome-rails
   jquery-rails
   jquery-ui-rails
+  js-routes
+  kaminari
   net-ssh (= 2.7.0)
   pg
   rails (= 3.2.19)
   rails-assets-bootstrap (~> 3.1.1)
+  rails-assets-fancybox
   rails-assets-fotorama
+  rails-assets-imagesloaded
+  rails-assets-jquery-autosize
+  rails-assets-masonry
+  rails-assets-nprogress
+  rails-assets-underscore
+  rails-assets-underscore.string
   rmagick
   role-rails
   russian

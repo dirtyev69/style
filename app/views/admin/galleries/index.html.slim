@@ -1,17 +1,24 @@
 - title "Galleries"
+@gallery
 - for gallery in @galleries
   .gallery
     h2= link_to gallery.name, admin_gallery_path(gallery)
     | Paintings: #{gallery.paintings.size}
 
-  #paintings
-  -  gallery.paintings.each do |painting|
-    .painting
-      = image_tag painting.image_url(:thumb) if painting.image?
-      .name
-        = painting.name
-      .actions
-        = link_to "edit", edit_admin_painting_path(painting)
-        span |
-        = link_to "remove", admin_painting_path(painting), :confirm => 'Are you sure?', :method => :delete
+  @galleryItemsList data-id="#{gallery.id}"
+    -  gallery.paintings.each do |painting|
+      .painting
+        = image_tag painting.image_url(:thumb) if painting.image?
+
+        .name
+          = painting.name
+        .actions
+          = link_to "edit", edit_admin_painting_path(painting)
+          span |
+          = link_to "remove", admin_painting_path(painting), :confirm => 'Are you sure?', :method => :delete
+  .btn.btn-default.btn-fileinput@upload
+    | Загрузить фотографии
+
+
 p= link_to "New Gallery", new_admin_gallery_path, :class => 'btn btn-default'
+

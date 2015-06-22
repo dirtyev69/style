@@ -24,17 +24,32 @@ gem 'sass-rails'
 gem 'daemons'
 gem 'delayed_job_active_record'
 
+gem 'kaminari'
+
 gem 'whenever'
 gem 'font-awesome-rails'
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+gem 'js-routes'
+
+
 
 gem 'rmagick', :require => 'RMagick'
 gem 'rails-assets-bootstrap', '~> 3.1.1'
 gem 'rails-assets-fotorama'
 gem 'role-rails'
 gem 'russian'
+
+gem 'rails-assets-imagesloaded'
+gem 'rails-assets-masonry'
+gem 'rails-assets-jquery-autosize'
+
+gem 'rails-assets-nprogress'
+gem 'rails-assets-underscore'
+gem 'rails-assets-underscore.string'
+
+gem 'rails-assets-fancybox'
 
 group :assets do
   gem 'coffee-rails', '~> 3.2.1'

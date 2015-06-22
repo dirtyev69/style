@@ -7,11 +7,13 @@
   .gallery
     h4
       = gallery.name
-    .gallery__list
-      -  gallery.paintings.each do |item|
+    .gallery__list@masonry
+      -  paintings_collection(gallery).each do |item|
         .gallery__item
-          = link_to painting_path(item) do
-            = image_tag item.image_url(:thumb)
-          / = image_tag painting.image_url(:full)
+          / = link_to painting_path(item) do
+          /   = image_tag item.image_url(:thumb)
+          = link_to image_tag(item.image_url(:thumb), class: 'img-responsive'), item.image_url(:full), role: 'fancyboxThumb', rel: 'fancybox', class: 'img-responsive'
           / .name
-          /   = painting.name
+          /   = item.name
+    .text-align-center
+      = paginate paintings_collection(gallery)

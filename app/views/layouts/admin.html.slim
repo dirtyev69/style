@@ -5,8 +5,8 @@ html
       | Luxepages
     = csrf_meta_tags
     = stylesheet_link_tag 'admin/application'
-    = javascript_include_tag 'admin/application'
-    
+    = javascript_include_tag 'application'
+
   body
     = render :partial => 'admin/shared/header'
     .container
@@ -16,5 +16,5 @@ html
             = render_breadcrumbs :builder => ::BootstrapBreadcrumbsBuilder
         .col-md-3
           = content_for :actions
-      
+
       = yield

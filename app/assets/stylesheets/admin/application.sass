@@ -1,9 +1,29 @@
 @import "bootstrap"
 @import "compass"
 @import "font-awesome"
+@import "nprogress"
 @import "ui/*"
 
 .painting
   display: inline-block
   margin: 0 10px 0 0
 
+.btn-fileinput, .fileinput, .link_fileinput
+  position: relative
+  overflow: hidden
+  cursor: pointer
+  vertical-align: top
+  input
+    position: absolute
+    cursor: pointer
+    top: 0
+    right: 0
+    margin: 0
+    opacity: 0
+    font-size: 600px
+
+.fileinput
+  padding: 0
+
+.fileinput-inline
+  display: inline-block
