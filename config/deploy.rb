@@ -17,6 +17,8 @@ set :copy_exclude, [".git"]
 set :deploy_via, :remote_cache
 set :normalize_asset_timestamps, false
 
+set :shared_children, shared_children + %w{public/uploads}
+
 # Bundle config
 set :bundle_binary, "bundle"
 set :bundle_flags,  "--deployment"
