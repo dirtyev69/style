@@ -6,6 +6,6 @@ db/schema.rb
 
 .bundle/*
 
-public/uploads/
+public/uploads
 
 

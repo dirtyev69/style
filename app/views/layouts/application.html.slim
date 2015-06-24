@@ -22,6 +22,8 @@ html
 
     - if Rails.env.production?
       = render :partial => 'shared/services/google_analytics'
+      = render :partial => 'shared/services/yandex_metrika'
+
   body
     = render :partial => 'shared/header'
     .container
