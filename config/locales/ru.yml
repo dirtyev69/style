@@ -3,7 +3,7 @@ ru:
   views:
     pagination:
       truncate: '…'
-      next:     '›'
+      next:     'След.'
       last:     'Последняя'
       first:    'Первая'
-      previous: '‹'
+      previous: 'Пред.'
