@@ -1,6 +1,6 @@
 Prod::Application.routes.draw do
   root :to => "pages#index"
-  resources :galleries
+  resources :galleries, :only => [:index]
   resources :paintings
 
   match 'contacts' => 'pages#contacts', :via => :get
