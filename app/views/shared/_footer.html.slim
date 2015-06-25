@@ -1,8 +1,15 @@
 .footer
-  .wrapper
-    p
+  .footer__content
+    p.footer__contacts
       | Контактная информация:
       '
       span> г. Тверь, пр-т Ленина, 15/4.
       span> тел:
       = tel_to '74-35-85'
+
+    ul.footer__social
+      li Магазин Стиль в соцсетях:
+      li
+        = link_to fa_icon('vk'), 'https://vk.com/shoes_style_tver', target: '_blank'
+      li
+        = link_to fa_icon('google-plus'), 'https://plus.google.com/109544173905661593598/about', target: '_blank'
