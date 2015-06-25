@@ -1,7 +1,6 @@
 .header
-  height: 60px
-  width: 100%
-  +box-sizing(border-box)
+  width: 900px
+  margin: 0 auto
   +clearfix
 
 .main_navigation
@@ -9,15 +8,16 @@
   li
     position: relative
     +inline-block
-    line-height: 14px
-    font-size: 14px
-    font-family: Arial
+    line-height: 16px
+    font-size: 16px
+    font-family: $font-family-sans-serif
     &.active
       a
+        color: #000
         text-decoration: underline
     a
       display: block
-      padding: 35px 28px 23px
+      padding: 35px 30px 20px
       color: #656565
       outline: none
       &:hover, &:active, &:visited
