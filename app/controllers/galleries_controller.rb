@@ -1,6 +1,6 @@
 class GalleriesController < ApplicationController
 
-  helper_method :paintings_collection
+  helper_method :paintings_collection, :search
 
   def index
     @galleries = Gallery.all
@@ -8,7 +8,11 @@ class GalleriesController < ApplicationController
 
 protected
 
+  def search
+    params[:type] ? params[:type] : nil
+  end
+
   def paintings_collection(gallery)
-    @paintings_collection ||= gallery.paintings.page(params[:page])
+    @paintings_collection ||= gallery.paintings.where(:item_type => params[:type]).ordered.page(params[:page])
   end
 end

@@ -4,7 +4,6 @@ class Admin::PaintingsController < Admin::BaseController
   end
 
   def create
-    puts 'asdasdasd'
     @painting = Painting.new(params[:painting])
     if @painting.save
       flash[:notice] = "Successfully created painting."
@@ -34,4 +33,5 @@ class Admin::PaintingsController < Admin::BaseController
     flash[:notice] = "Successfully destroyed painting."
     redirect_to admin_gallery_path(@painting.gallery)
   end
+
 end
