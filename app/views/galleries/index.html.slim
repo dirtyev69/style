@@ -19,7 +19,7 @@
     .gallery__list@masonry
       - if !paintings_collection(gallery).present?
         .well
-          p.lead Извените, товара такого типа пока нет
+          p.lead Извините, товара такого типа пока нет
       -  paintings_collection(gallery).each do |item|
         .gallery__item
           / = link_to painting_path(item) do
