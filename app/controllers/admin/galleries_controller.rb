@@ -15,7 +15,7 @@ class Admin::GalleriesController < Admin::BaseController
     @gallery = Gallery.new(params[:gallery])
     if @gallery.save
       # flash[:notice] = "Successfully created gallery."
-      redirect_to @gallery
+      redirect_to admin_galleries_url
     else
       render :action => 'new'
     end
@@ -29,7 +29,7 @@ class Admin::GalleriesController < Admin::BaseController
     @gallery = Gallery.find(params[:id])
     if @gallery.update_attributes(params[:gallery])
       flash[:notice] = "Successfully updated gallery."
-      redirect_to admin_gallery_path
+      redirect_to admin_gallery_url
     else
       render :action => 'edit'
     end
@@ -39,6 +39,6 @@ class Admin::GalleriesController < Admin::BaseController
     @gallery = Gallery.find(params[:id])
     @gallery.destroy
     flash[:notice] = "Successfully destroyed gallery."
-    redirect_to admin_galleries_path
+    redirect_to admin_galleries_url
   end
 end
