@@ -25,7 +25,7 @@ class Style
   constructor: (@$container) ->
     self = this
 
-    new Lib.Up(@$container.find("@up"))
+    # new Lib.Up(@$container.find("@up"))
     new Lib.Gallery(@$container)
     new Lib.Fancybox(@$container)
 

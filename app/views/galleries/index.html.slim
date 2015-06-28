@@ -1,9 +1,18 @@
+coffee:
+  $(document).ready ->
+    $container = $(document)
+    new Lib.Up($container.find('@up'))
+
+
 - seo_title 'Каталог обуви'
 
 - seo_description 'Обувь Стиль, магазин. Обувной магазин женской обуви в городе Тверь, Каталог обуви Тверь'
 
 - seo_keywords 'Галерея Обувь Стиль Тверь, обувной магазин Тверь, стильная обувь,
 качественная обувь Тверь'
+
+
+
 
 - for gallery in @galleries
   .gallery
