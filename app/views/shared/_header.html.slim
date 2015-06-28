@@ -8,5 +8,5 @@
       = link_to 'Каталог обуви', galleries_path
     li class="#{controller_name == 'pages' && action_name == 'contacts' && 'active'}"
       = link_to 'Контакты', contacts_path
-    li
-      = link_to 'Обратная связь', '#'
+    li class="#{controller_name == 'pages' && 'active'}"
+      = link_to 'О нас', about_path

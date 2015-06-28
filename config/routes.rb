@@ -4,6 +4,7 @@ Prod::Application.routes.draw do
   resources :paintings
 
   match 'contacts' => 'pages#contacts', :via => :get
+  match 'about' => 'pages#about', :via => :get
 
   namespace 'admin' do
     get '/' => 'dashboard#index'
