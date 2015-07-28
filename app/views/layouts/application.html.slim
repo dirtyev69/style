@@ -28,7 +28,6 @@ html
     .up@up
       = fa_icon "long-arrow-up", text: 'Наверх'
     = render :partial => 'shared/header'
-    .container
+    .container.container-main
       = yield
-      = render :partial => 'shared/map'
     = render :partial => 'shared/footer'

@@ -36,10 +36,12 @@ gem 'js-routes'
 
 
 gem 'rmagick', :require => 'RMagick'
-gem 'rails-assets-bootstrap', '~> 3.1.1'
+# gem 'rails-assets-bootstrap', '~> 3.1.1'
 gem 'rails-assets-fotorama'
 gem 'role-rails'
 gem 'russian'
+
+gem 'rails-assets-bootstrap-sass'
 
 gem 'rails-assets-imagesloaded'
 gem 'rails-assets-masonry'

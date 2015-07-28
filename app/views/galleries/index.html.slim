@@ -11,15 +11,15 @@ coffee:
 - seo_keywords 'Галерея Обувь Стиль Тверь, обувной магазин Тверь, стильная обувь,
 качественная обувь Тверь'
 
-
-
+h1.page-header Каталог обуви
+/ p.small скидка на всю коллекцию - 20%
 
 - for gallery in @galleries
   .gallery
     h3.gallery__title
-        = gallery.name
+      = gallery.name
     ul.filter
-      li class="#{'active' if search.nil?}"
+      li class="#{'active' if search == nil && !params[:all]}"
         = link_to 'Все', galleries_path(type: nil)
       li class="#{'active' if search.to_i == 1}"
         = link_to 'Туфли', galleries_path(type: 1)
@@ -27,16 +27,20 @@ coffee:
         = link_to 'Босоножки', galleries_path(type: 2)
       li class="#{'active' if search.to_i == 3}"
         = link_to 'Шлепанцы', galleries_path(type: 3)
-    .gallery__list@masonry
+      / li
+      /   = link_to 'Все сразу', galleries_path(all: true)
+    .row.gallery__list@masonry
       - if !paintings_collection(gallery).present?
         .well
           p.lead Извините, товара такого типа пока нет
       -  paintings_collection(gallery).each do |item|
-        .gallery__item
-          / = link_to painting_path(item) do
-          /   = image_tag item.image_url(:thumb)
-          = link_to image_tag(item.image_url(:thumb), class: 'img-responsive'), item.image_url(:full), role: 'fancyboxThumb', rel: 'fancybox', class: 'img-responsive'
-          / .name
-          /   = item.name
-    .text-align-center
-      = paginate paintings_collection(gallery)
+        .col-md-4.col-sm-4.col-xs-6
+          .gallery__item
+            / = link_to painting_path(item) do
+            /   = image_tag item.image_url(:thumb)
+            = link_to image_tag(item.image_url(:thumb), class: 'img-responsive'), item.image_url(:full), role: 'fancyboxThumb', rel: 'fancybox', class: 'gallery__item__link'
+            / .name
+            /   = item.name
+    .text-center
+      - unless params[:all].present?
+        = paginate paintings_collection(gallery)

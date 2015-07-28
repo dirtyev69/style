@@ -143,7 +143,7 @@ GEM
       activesupport (= 3.2.19)
       bundler (~> 1.0)
       railties (= 3.2.19)
-    rails-assets-bootstrap (3.1.1)
+    rails-assets-bootstrap-sass (3.3.5)
       rails-assets-jquery (>= 1.9.0)
     rails-assets-doc-ready (1.0.4)
       rails-assets-eventie (>= 1, < 2)
@@ -261,7 +261,7 @@ DEPENDENCIES
   net-ssh (= 2.7.0)
   pg
   rails (= 3.2.19)
-  rails-assets-bootstrap (~> 3.1.1)
+  rails-assets-bootstrap-sass
   rails-assets-fancybox
   rails-assets-fotorama
   rails-assets-imagesloaded

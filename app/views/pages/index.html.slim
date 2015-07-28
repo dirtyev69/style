@@ -2,12 +2,15 @@
 
 - seo_keywords 'Обувь Стиль Тверь, обувной магазин Стиль, магазин обуви, женский обувной магазин город Тверь, купить обувь Тверь, каталог обуви, купить туфли'
 
-.wrapper
-  h2 Наши Бренды
-  p.lead
-    | Мы специализируемся на женской обуви и соотрудничаем с такими известными торговыми марками как: Hispanitas, Pikolinas, Beautifeel, Hogl и другими.
-.fotorama@fotorama  data-width="100%" data-height='550' data-autoplay="true" data-fit="cover" data-nav="false"
-  = image_tag('Hispanitas.jpg', alt: 'Hispanitas')
-  = image_tag('Beautifeel.jpg', alt: 'Beautifeel')
-  = image_tag('Pikolinas.jpg', alt: 'Pikolinas')
+
+  / h2 Наши Бренды
+  / p.lead
+  /   | Мы специализируемся на женской обуви и соотрудничаем с такими известными торговыми марками как: Hispanitas, Pikolinas, Beautifeel, Hogl и другими.
+.sale.well.well-small
+  = image_tag('sale.jpg', alt: 'сезонная распродажа', class: 'img-responsive')
+.fotorama@fotorama  data-width="100%" data-height='auto' data-autoplay="true" data-fit="cover" data-nav="false" data-arrow='false'
+  = image_tag('Hispanitas.jpg', alt: 'Hispanitas', class: 'img-responsive')
+  = image_tag('Beautifeel.jpg', alt: 'Beautifeel', class: 'img-responsive')
+  = image_tag('Pikolinas.jpg', alt: 'Pikolinas', class: 'img-responsive')
+/ = image_tag('sale.jpg', alt: 'сезонная скидка', class: 'img-responsive')
   / = image_tag('https://m1.behance.net/rendition/modules/41106003/disp/9a477ec179a96ef3204c6b6ef1700293.jpg', alt: 'Hogl')
