@@ -23,6 +23,12 @@ set :shared_children, shared_children + %w{public/uploads}
 set :bundle_binary, "bundle"
 set :bundle_flags,  "--deployment"
 
+set :ssh_options, {
+  forward_agent: true,
+  paranoid: true,
+  keys: "~/.ssh/id_rsa_prod"
+}
+
 require 'capistrano/ext/multistage'
 require "bundler/capistrano"
 # require "whenever/capistrano"
