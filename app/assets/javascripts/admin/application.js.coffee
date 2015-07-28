@@ -4,4 +4,4 @@
 
 #= require jquery.role
 
-#= require bootstrap
+#= require bootstrap-sass
