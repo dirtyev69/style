@@ -1,17 +1,3 @@
-/ .header
-/   ul.main_navigation
-/     .logo
-/       h1 Обувь Стиль Тверь
-/     li class="#{controller_name == 'pages' && action_name == 'index' && 'active'}"
-/       = link_to 'Главная', root_path
-/     li class="#{controller_name == 'galleries' && 'active'}"
-/       = link_to 'Каталог обуви', galleries_path
-/     li class="#{controller_name == 'pages' && action_name == 'contacts' && 'active'}"
-/       = link_to 'Контакты', contacts_path
-/     li class="#{controller_name == 'pages' && action_name == 'about' && 'active'}"
-/       = link_to 'О нас', about_path
-
-
 .navbar.navbar-default.navbar-static-top
   .container-fluid.header
     .navbar-header
@@ -20,19 +6,13 @@
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      / = link_to root_url, class: "navbar-brand" do
-      /   h1.small
-      /     = image_tag 'logo.png', :width => 150, alt: 'Стиль'
+      = link_to root_url, class: 'header__logo' do
 
-    / ul.nav.navbar-nav.navbar-left.visible-lg-block.visible-md-block
-    /   li
-    /     = link_to root_url, class: "navbar-brand" do
-    /       | Стиль
+        span Магазин Стиль
+
 
     .collapse.navbar-collapse#navbar
       ul.nav.navbar-nav.navbar-right
-        li class="#{controller_name == 'pages' && action_name == 'index' && 'active'}"
-          = link_to 'Главная', root_path
         li class="#{controller_name == 'galleries' && 'active'}"
           = link_to 'Каталог обуви', galleries_path
         li class="#{controller_name == 'pages' && action_name == 'contacts' && 'active'}"
