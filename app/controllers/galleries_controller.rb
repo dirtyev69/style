@@ -1,15 +1,27 @@
 class GalleriesController < ApplicationController
 
-  helper_method :paintings_collection, :search
+  helper_method :paintings_collection, :search, :resource_gallery
 
   def index
     @galleries = Gallery.all
+
+    if request.xhr?
+      puts 'asdads'
+      render :json => {
+        :data => render_to_string(:partial => 'galleries/shared/tiles', :locals => { :articles => paintings_collection(resource_gallery) }),
+        :pagination => view_context.render_pagination(paintings_collection(resource_gallery))}
+      return
+    end
   end
 
 protected
 
   def search
     params[:type] ? params[:type] : nil
+  end
+
+  def resource_gallery
+    @gallery = Gallery.find(15)
   end
 
   def paintings_collection(gallery)

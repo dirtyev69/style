@@ -9,7 +9,7 @@ gem 'authlogic'
 gem 'better_errors'
 gem 'breadcrumbs_on_rails'
 gem 'scrypt'
-
+gem 'skim'
 
 gem 'net-ssh', '2.7.0'
 
@@ -25,6 +25,8 @@ gem 'daemons'
 gem 'delayed_job_active_record'
 
 gem 'kaminari'
+
+
 
 gem 'whenever'
 gem 'font-awesome-rails'
@@ -45,6 +47,7 @@ gem 'rails-assets-bootstrap-sass'
 
 gem 'rails-assets-imagesloaded'
 gem 'rails-assets-masonry'
+gem 'rails-assets-jquery.lazyload'
 gem 'rails-assets-jquery-autosize'
 
 gem 'rails-assets-nprogress'

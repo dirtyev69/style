@@ -29,18 +29,24 @@ h1.page-header Каталог обуви
         = link_to 'Шлепанцы', galleries_path(type: 3)
       / li
       /   = link_to 'Все сразу', galleries_path(all: true)
-    .row.gallery__list@masonry
+    .row.gallery__list@paginatable
       - if !paintings_collection(gallery).present?
         .well
           p.lead Извините, товара такого типа пока нет
+      - arr = []
       -  paintings_collection(gallery).each do |item|
+        - arr.push(item.id)
         .col-md-4.col-sm-4.col-xs-6
           .gallery__item
             / = link_to painting_path(item) do
             /   = image_tag item.image_url(:thumb)
             = link_to image_tag(item.image_url(:thumb), class: 'img-responsive'), item.image_url(:full), role: 'fancyboxThumb', rel: 'fancybox', class: 'gallery__item__link'
-            / .name
-            /   = item.name
-    .text-center
-      - unless params[:all].present?
-        = paginate paintings_collection(gallery)
+      = render_pagination paintings_collection(gallery)
+
+    .hide
+      - Painting.where('id NOT IN (?)', arr).each do | p |
+
+        = link_to image_tag(p.image_url(:thumb), class: 'img-responsive'), p.image_url(:full), role: 'fancyboxThumb', rel: 'fancybox', class: 'gallery__item__link'
+
+
+      = render_pagination paintings_collection(gallery)

@@ -20,4 +20,21 @@ module ApplicationHelper
     groups = text.to_s.scan(/(?:^\+)?\d+/)
     link_to text, "tel:#{groups.join '-'}"
   end
+
+  def render_pagination(collection, options = {})
+    html = ''
+
+    begin
+      # FIXME
+      if collection.next_page.present?
+        html += link_to('Показать больше материалов', url_for(params.merge(:page => collection.next_page)), :class => 'btn btn-lg btn-default', :role => 'more')
+      end
+    rescue
+      nil
+    end
+
+    html += paginate(collection, :options => options, :window => 2, :left => 1, :right => 1)
+
+    content_tag(:div, html.html_safe, class: 'pagination_container', role: 'pagination')
+  end
 end

@@ -17,6 +17,7 @@
 #= require jquery-autosize
 #= require_tree ./ext
 #= require_tree ./lib
+#= require_tree ./templates
 
 $(document).ready ->
   window.Style = new Style($(document))
@@ -28,6 +29,8 @@ class Style
     # new Lib.Up(@$container.find("@up"))
     new Lib.Gallery(@$container)
     new Lib.Fancybox(@$container)
+
+    new Lib.Pagi(@$container.find('@pagination'))
 
     @$container.find('@fotorama').fotorama
 
