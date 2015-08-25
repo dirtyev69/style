@@ -27,7 +27,7 @@ module ApplicationHelper
     begin
       # FIXME
       if collection.next_page.present?
-        html += content_tag(:div, link_to('Показать больше моделей', url_for(params.merge(:page => collection.next_page)), :class => 'btn btn-lg btn-default', :role => 'more'), class: 'text-center',)
+        html += content_tag(:div, link_to('more models', url_for(params.merge(:page => collection.next_page)), :class => 'btn btn-lg btn-default', :role => 'more'), class: 'text-center',)
       end
     rescue
       nil
