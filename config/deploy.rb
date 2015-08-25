@@ -41,6 +41,13 @@ set :unicorn_binary, "unicorn"
 after "deploy:restart", "deploy:cleanup"
 
 namespace :deploy do
+  task :start, :roles => :app, :except => { :no_release => true } do
+    run "cd #{current_path} && #{try_sudo} #{bundle_binary} exec #{unicorn_binary} -c #{unicorn_config} -E #{rails_env} -D"
+  end
+  task :stop, :roles => :app, :except => { :no_release => true } do
+    run "if [ -e #{unicorn_pid} ]; then #{try_sudo} kill `cat #{unicorn_pid}`; else echo '#{unicorn_pid} does not exists'; fi"
+  end
+
   task :cope_with_git_repo_relocation do
     run "if [ -d #{shared_path}/cached-copy ]; then cd #{shared_path}/cached-copy && git remote set-url origin #{repository}; else true; fi"
   end
