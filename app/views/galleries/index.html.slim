@@ -43,9 +43,9 @@ h1.page-header Каталог обуви
             = link_to image_tag(item.image_url(:thumb), class: 'img-responsive'), item.image_url(:full), role: 'fancyboxThumb', rel: 'fancybox', class: 'gallery__item__link'
       = render_pagination paintings_collection(gallery)
 
-      .hide
-        - Painting.where('id NOT IN (?)', arr).each do | p |
+      / .hide
+      /   - Painting.where('id NOT IN (?)', arr).each do | p |
 
-          = link_to image_tag(p.image_url(:thumb), class: 'img-responsive'), p.image_url(:full), role: 'fancyboxThumb', rel: 'fancybox', class: 'gallery__item__link'
+      /     = link_to image_tag(p.image_url(:thumb), class: 'img-responsive'), p.image_url(:full), role: 'fancyboxThumb', rel: 'fancybox', class: 'gallery__item__link'
 
 
