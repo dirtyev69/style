@@ -29,7 +29,7 @@ h1.page-header Каталог обуви
         = link_to 'Шлепанцы', galleries_path(type: 3)
       / li
       /   = link_to 'Все сразу', galleries_path(all: true)
-    .row.gallery__list@paginatable
+    .row.gallery__list@masonry@paginatable
       - if !paintings_collection(gallery).present?
         .well
           p.lead Извините, товара такого типа пока нет
@@ -49,4 +49,4 @@ h1.page-header Каталог обуви
         = link_to image_tag(p.image_url(:thumb), class: 'img-responsive'), p.image_url(:full), role: 'fancyboxThumb', rel: 'fancybox', class: 'gallery__item__link'
 
 
-      = render_pagination paintings_collection(gallery)
+      / = render_pagination paintings_collection(gallery)

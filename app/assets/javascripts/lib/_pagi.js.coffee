@@ -6,6 +6,8 @@ class Lib.Pagi
     if @$container.length > 0
       self = this
 
+    # console.log @$list = self.$container.parent()
+
     @$container.parents(':first').off('click', '@more').on('click', '@more'
       ->
         return false if self.$container.data('loading')
@@ -30,11 +32,10 @@ class Lib.Pagi
         window.history.pushState('string', document.title, url)
 
         if json?
-          console.log json
-          console.log $html = $(json.data).css({ opacity: 0 })
-          $list = self.$container.find('@paginatable:first')
+          $html = $(json.data).css({ opacity: 0 })
+          $list = self.$container.parent()
 
-          $list.append($html).imagesLoaded(
+          $list.prepend($html).imagesLoaded(
             ->
               self.$container.html(json.pagination)
               $html.animate({ opacity: 1 })

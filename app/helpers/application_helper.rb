@@ -27,7 +27,7 @@ module ApplicationHelper
     begin
       # FIXME
       if collection.next_page.present?
-        html += link_to('Показать больше материалов', url_for(params.merge(:page => collection.next_page)), :class => 'btn btn-lg btn-default', :role => 'more')
+        html += content_tag(:div, link_to('Показать больше моделей', url_for(params.merge(:page => collection.next_page)), :class => 'btn btn-lg btn-default', :role => 'more'), class: 'text-center',)
       end
     rescue
       nil
@@ -35,6 +35,6 @@ module ApplicationHelper
 
     html += paginate(collection, :options => options, :window => 2, :left => 1, :right => 1)
 
-    content_tag(:div, html.html_safe, class: 'pagination_container', role: 'pagination')
+    content_tag(:div, html.html_safe, class: 'col-md-12 col-xs-12 text-center', role: 'pagination')
   end
 end
