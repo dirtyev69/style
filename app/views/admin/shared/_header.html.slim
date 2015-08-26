@@ -1,15 +1,16 @@
-.navbar.navbar-inverse.navbar-fixed-top
-  .container
-    .navbar-header
-      ul.nav.navbar-nav
-        li { class="#{'active' if params[:controller] == 'admin/dashboard'}"  }
-          = link_to admin_path(), :class => 'navbar-brand' do
-            = fa_icon "tachometer"
-        li{ class="#{'active' if params[:controller] =~ /admin\/galleries/ }" }
-            = link_to 'Галлереи', admin_galleries_path
+- if current_user.present?
+  .navbar.navbar-inverse.navbar-fixed-top
+    .container
+      .navbar-header
+        ul.nav.navbar-nav
+          li { class="#{'active' if params[:controller] == 'admin/dashboard'}"  }
+            = link_to admin_path(), :class => 'navbar-brand' do
+              = fa_icon "tachometer"
+          li{ class="#{'active' if params[:controller] =~ /admin\/galleries/ }" }
+              = link_to 'Галлереи', admin_galleries_path
 
-        li{ class="#{'active' if params[:controller] =~ /admin\/paintings/ }" }
-            = link_to 'Превью', admin_paintings_path
+          li{ class="#{'active' if params[:controller] =~ /admin\/paintings/ }" }
+              = link_to 'Превью', admin_paintings_path
 
 
     / ul.nav.navbar-nav
