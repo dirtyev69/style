@@ -29,8 +29,8 @@ h1.page-header Каталог обуви
         = link_to 'Шлепанцы', galleries_path(type: 3)
       / li
       /   = link_to 'Все сразу', galleries_path(all: true)
-    .row.gallery__list@masonry@paginatable
-      - if !paintings_collection(gallery).present?
+    .row.gallery__list@masonry@paginatable data-id="#{gallery.id}"
+      - unless paintings_collection(gallery).present?
         .well
           p.lead Извините, товара такого типа пока нет
       - arr = []

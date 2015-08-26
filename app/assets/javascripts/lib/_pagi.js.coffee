@@ -6,7 +6,6 @@ class Lib.Pagi
     if @$container.length > 0
       self = this
 
-    # console.log @$list = self.$container.parent()
 
     @$container.parents(':first').off('click', '@more').on('click', '@more'
       ->

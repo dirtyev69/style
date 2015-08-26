@@ -21,7 +21,7 @@ protected
   end
 
   def resource_gallery
-    @gallery = Gallery.find(15)
+    @gallery = Gallery.find(params[:id])
   end
 
   def paintings_collection(gallery)
